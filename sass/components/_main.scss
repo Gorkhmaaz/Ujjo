@@ -1,10 +1,8 @@
 .section-main {
-    width: 95%;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+    @include elementStyle (95%,flex,center,center){
+        margin: auto;
+        margin-bottom: 30px
+    }
     .left {
         width: 50%;
 
@@ -28,12 +26,11 @@
         }
 
         .left-middle {
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: 28px;
-            padding: 20px 0;
+            @include elementStyle(100%, flex, space-between, center){
+                gap: 28px;
+                padding: 20px 0;
+            }
+          
 
             p {
                 @include paragraphStyle;
@@ -81,15 +78,57 @@
                 text-transform: uppercase;
             }
         }
-        .right-bottom{
+
+        .right-bottom {
             width: 100%;
             text-align: center;
-            img{
+
+            img {
                 width: 95%;
-                height: 640px;   
+                height: 640px;
             }
         }
     }
+}
 
+.scorp {
+    @include elementStyle(95%, flex, space-between,center){
+        margin: auto;
+        margin-bottom: 90px
+    }
 
+    h2 {
+        text-align: center;
+        color: #000;
+        font-size: 65px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 72.576px;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+    }
+
+    img {
+        width: 225px;
+        height: 156px;
+    }
+}
+
+.image {
+    @include elementStyle(95%, flex, space-between, center){
+        margin: auto;
+        gap: 358px;
+    }
+
+}
+
+.paper {
+   @include elementStyle (100%, flex, space-between, center){
+    margin: auto;
+    margin-bottom: 40px;
+   }
+   
+    p {
+        @include paragraphMain;
+    }
 }
