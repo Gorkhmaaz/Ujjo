@@ -1,0 +1,65 @@
+.offer {
+    @include elementStyle(85%, flex, space-between, center);
+    margin: 0 auto;
+    border: 2px solid grey;
+    padding: 20px 0;
+    position: relative;
+
+    .offer__img {
+        background-image: url("../../image/Vector\ \(3\).png");
+        height: 80vh;
+        width: 33%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        position: relative;
+
+        .offer__img--position {
+            position: absolute;
+            text-align: center;
+            left: 60px;
+            top: 120px;
+
+            p {
+                @include offerDesc(14px,normal,400,#000,28px,0.5px,uppercase);
+            }
+
+            h3 {
+                @include offerDesc(26px,normal,400,#000,38px,0.5px,uppercase);
+               
+            }
+        }
+
+        img {
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            left: 38px;
+            bottom: 20px;
+        }
+        
+    }
+}
+.offer__section__img{
+    width: 5%;
+    position: absolute;
+    left:120px;
+    top: 1250px;
+}
+.offer__section__img1{
+    width: 48px;
+    height: 48px;
+    margin-top: 33px;
+}
+.offer__section__img2{
+    @include offerSection(48px,78px,340px,38px)
+   
+}
+.offer__section__img3{
+    @include offerSection(48px,78px,720px,38px)
+    
+}
+.offer__section__img4{
+    @include offerSection(48px,48px,1050px,33px)
+    
+}

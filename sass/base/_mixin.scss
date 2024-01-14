@@ -30,14 +30,13 @@
     text-transform: uppercase;
     color: #000;
 }
-@mixin elementStyle($width, $display, $justify, $align){
+@mixin elementStyle($width,$display,$justify,$align){
     width: $width;
     display: $display;
     justify-content: $justify;
     align-items: $align;
-  
-    
 }
+
 @mixin paragraphMain{
     text-align: center;
     color: #000;
@@ -47,4 +46,19 @@
     line-height: 25.92px;
     letter-spacing: 0.5px;
     text-transform: uppercase;
+}
+@mixin offerSection($width,$height,$margin-left,$margin-top){
+    width: $width;
+    height: $height;
+    margin-left: $margin-left;
+    margin-top: $margin-top;
+}
+@mixin offerDesc($fontSize,$fontStyle,$fontWeight,$color,$lineHeight,$letterSpasing,$textTransform){
+    font-size: $fontSize;
+    font-style: $fontStyle;
+    font-weight: $fontWeight;
+    color: $color;
+    line-height: $lineHeight;
+    letter-spacing: $letterSpasing;
+    text-transform: $textTransform;
 }
